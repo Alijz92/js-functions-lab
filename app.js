@@ -85,3 +85,62 @@ const generateEmail = (name, domain) => {
 }
 
 console.log('Exercise 4 Result:', generateEmail('johnsmith', 'example.com'))
+
+/*
+Exercise 5: greetUser()
+
+Define a function called greetUser. It should take a name and a 
+time of day (morning, afternoon, evening) and return a personalized 
+greeting.
+
+Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
+
+Complete the exercise in the space below:
+*/
+
+const greetUser = (name, time) => {
+  return 'Good ' + time + ', ' + name
+}
+
+console.log('Exercise 5 Result:', greetUser('Sam', 'morning'))
+
+/*
+Exercise 6: maxOfThree()
+
+Define a function, maxOfThree. It should accept three numbers 
+and return the largest among them.
+
+Example: maxOfThree(17, 4, 9) should return 17.
+
+Complete the exercise in the space below:
+*/
+
+const maxOfThree = (n1, n2, n3) => {
+  if (n1 > n2 && n1 > n3) {
+    return n1
+  } else if (n2 > n1 && n2 > n3) {
+    return n2
+  } else {
+    return n3
+  }
+}
+
+console.log('Exercise 6 Result:', maxOfThree(5, 10, 8))
+
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
+Complete the exercise in the space below:
+*/
+
+const calculateTip = (bA, tP) => {
+  return Math.round(bA * (tP / 100))
+}
+
+console.log('Exercise 7 Result:', calculateTip(50, 20))
